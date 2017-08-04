@@ -11,14 +11,25 @@
   <body>
     <div class="container">
       <h1 id="heading">Find a Doctor</h1>
+      <img src="http://www.pngmart.com/files/3/Red-Cross-PNG-HD.png" id="cross">
       <p id="intro">Feeling ill? Don't know who to see or where to go? Tired of searching the web for the right specialist for you? Welcome to the super awesome find a local doctor web app. Enter the symptoms you are experiencing and we'll provide you with a list of local doctors ready to treat you.</p>
       <form id="find_doctor" >
         <label for="symptom">Enter your symptom</label>
         <input type="text" id="symptom" name="symptom">
         <button type="submit" name="button" class="btn-danger">Enter</button>
       </form>
-      <h3 id="display">Results</h3>
-      <ul id="results">
+      <div class="row">
+        <div class="col-md-8">
+          <h3 id="display">Results</h3>
+          <ul id="results">
+        </div>
+        <div class="col-md-4">
+          <h3 id="recents">Recently Searched symptoms</h3>
+          <ul id="recent_search">
+            
+          </ul>
+        </div>
+      </div>
 
       </ul>
     </div>
