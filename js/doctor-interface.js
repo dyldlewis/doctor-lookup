@@ -1,8 +1,9 @@
 var Doctor = require('./../js/doctor.js').doctorModule;
 
 var displayDoctors = function (doctors) {
+  $("#results").empty()
   for(i = 0; i < doctors.length; i++) {
-    $("#results").append("<li>" + doctors[i] + "</li>");
+    $("#results").append("<li>" + doctors[i].firstName + " " +  doctors[i].lastName + "</li>", "<p>" + doctors[i].bio + "</p>");
   }
 }
 
