@@ -17,7 +17,7 @@ Doctor.prototype.getDoctors = function(symptom, displayDoctors) {
         doctor = new Doctor(result.data[i].profile.first_name, result.data[i].profile.last_name, result.data[i].profile.bio, result.data[i].profile.image_url);
         doctors.push(doctor)
       }
-      displayDoctors(doctors)
+        displayDoctors(doctors)
     })
    .fail(function(error){
       console.log("fail");
