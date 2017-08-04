@@ -1,9 +1,10 @@
 var apiKey = require('./../.env').apiKey;
 
-function Doctor(first, last, bio){
+function Doctor(first, last, bio, photo){
 this.firstName = first;
 this.lastName = last;
 this.bio = bio;
+this.photo = photo;
 }
 
 
@@ -13,10 +14,9 @@ Doctor.prototype.getDoctors = function(symptom, displayDoctors) {
    .then(function(result) {
       console.log(result);
       for (i = 0; i < result.data.length; i++) {
-        doctor = new Doctor(result.data[i].profile.first_name, result.data[i].profile.last_name, result.data[i].profile.bio);
+        doctor = new Doctor(result.data[i].profile.first_name, result.data[i].profile.last_name, result.data[i].profile.bio, result.data[i].profile.image_url);
         doctors.push(doctor)
       }
-      console.log(doctors);
       displayDoctors(doctors)
     })
    .fail(function(error){
