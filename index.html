@@ -2,18 +2,20 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="build/css/vendor.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
+    <link rel="stylesheet" href="build/css/vendor.css">
     <title>Local Doctors</title>
   </head>
   <body>
     <div class="container">
       <h1>Find the perfect doctor near you</h1>
       <p>Feeling ill? Don't know who to see or where to go? Tired of searching the web for the right specialist for you? Welcome to the super awesome find a local doctor web app. Enter the symptoms you are experiencing and we'll provide you with a list of local doctors ready to treat you</p>
-      <label for="symptom">Enter your symptom</label>
-      <input type="text" id="symptom">
-      <button type="submit" name="button" class="btn-info">Enter</button>
+      <form id="find_doctor" >
+        <label for="symptom">Enter your symptom</label>
+        <input type="text" id="symptom" name="symptom">
+        <button type="submit" name="button" class="btn-info">Enter</button>
+      </form>
     </div>
   </body>
 </html>
