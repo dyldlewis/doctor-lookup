@@ -5,18 +5,19 @@
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
     <link rel="stylesheet" href="build/css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Local Doctors</title>
   </head>
   <body>
     <div class="container">
-      <h1>Find the perfect doctor near you</h1>
-      <p>Feeling ill? Don't know who to see or where to go? Tired of searching the web for the right specialist for you? Welcome to the super awesome find a local doctor web app. Enter the symptoms you are experiencing and we'll provide you with a list of local doctors ready to treat you</p>
+      <h1 id="heading">Find a Doctor</h1>
+      <p id="intro">Feeling ill? Don't know who to see or where to go? Tired of searching the web for the right specialist for you? Welcome to the super awesome find a local doctor web app. Enter the symptoms you are experiencing and we'll provide you with a list of local doctors ready to treat you.</p>
       <form id="find_doctor" >
         <label for="symptom">Enter your symptom</label>
         <input type="text" id="symptom" name="symptom">
-        <button type="submit" name="button" class="btn-info">Enter</button>
+        <button type="submit" name="button" class="btn-danger">Enter</button>
       </form>
-      <h3>Results</h3>
+      <h3 id="display">Results</h3>
       <ul id="results">
 
       </ul>
