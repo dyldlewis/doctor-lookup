@@ -30,7 +30,8 @@ In addition you must generate your own API key from https://developer.betterdoct
   * type 'git clone (repository url)'
   * type 'cd doctor-lookup' to access the new directory
   * create an .env file ($ mkdir .env)
-  * Open the .env file and input the following text: export apiKey = "your_api_key_here"; (it should be noted that your apikey variable name must be the same as in the example, it is case sensitive. Your API key itself should also be enclosed by one set of quotes).
+  * Open the .env file and input the following text:
+`export apiKey = "your_api_key_here";` (it should be noted that your apiKey variable name must be the same as in the example, it is case sensitive. Your API key itself should also be enclosed by one set of quotes).
   * Next, install the required dependencies:
     * $ npm install
     * $ bower install
