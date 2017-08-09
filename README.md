@@ -17,6 +17,7 @@ The user can enter symptoms they are experiencing or diseases they may already h
 Node.js must be installed to use and set up this program. If you do not yet have it installed, you can find a tutorial here:
 https://www.learnhowtoprogram.com/javascript/getting-started-with-javascript-2f9a73dc-b7f5-4a22-9101-e69d49f552ac/installing-node-js
 You must also have bower installed https://www.learnhowtoprogram.com/javascript/modern-js-apps/introducing-bower
+In addition you must generate your own API key from https://developer.betterdoctor.com/
 
 ## Setup/Installation Requirements
 
@@ -28,6 +29,8 @@ You must also have bower installed https://www.learnhowtoprogram.com/javascript/
   * Enter your desktop using 'cd desktop'
   * type 'git clone (repository url)'
   * type 'cd doctor-lookup' to access the new directory
+  * create an .env file ($ mkdir .env)
+  * Open the .env file and input the following text: export apiKey = "your_api_key_here"; (it should be noted that your apikey variable name must be the same as in the example, it is case sensitive. Your API key itself should also be enclosed by one set of quotes).
   * Next, install the required dependencies:
     * $ npm install
     * $ bower install
